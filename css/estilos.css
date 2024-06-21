@@ -1,0 +1,264 @@
+/* Reglas generales */
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300;400;700;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Merienda", cursive;
+    font-optical-sizing: auto;
+}
+body {
+    background: #000000;
+    color: #ffffff;
+    padding: 1em;
+    text-align: center;
+}
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+h1, h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+h3 {
+    font-size: 20px;
+    margin: 33px;
+    margin-top: 60px;
+    font-weight: 400;
+}
+h5 {
+    font-size: 30px;
+    text-align: right;
+    margin: 10px;
+    font-weight: 400;
+}
+h6 {
+    font-size: 30px;
+    display: flex;
+    justify-content: left;
+    margin: 10px;
+    font-weight: 400;
+}
+h7 {
+    margin-inline-start: 30px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 400;
+}
+#logo img {
+    width: 150px;
+}
+figure {
+    width: 100%;
+    margin: 30px auto;
+    text-align: center;
+}
+figure img {
+    width: 100%;
+    height: auto;
+}
+.videos {
+    margin: 50px auto;
+    max-width: 800px;
+}
+.videos h1 {
+    text-align: center;
+}
+.videos-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.videos figcaption {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.about-us {
+    margin: 50px auto;
+    max-width: 800px;
+    text-align: left;
+}
+.about-us h2 {
+    text-align: center;
+}
+.about-us p {
+    margin-top: 20px;
+    line-height: 1.6;
+    font-weight: 400;
+}
+.contacto {
+    margin: 50px auto;
+    max-width: 800px;
+    text-align: center;
+}
+.contacto h1 {
+    text-align: center;
+}
+.contact-info {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+.contact-column {
+    width: 50%;
+    padding: 0 20px;
+}
+.contact-column p {
+    margin: 5px 0;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+form label {
+    margin: 10px 0 5px;
+}
+form input, form textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+form button {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+form button:hover {
+    background-color: #cccccc;
+}
+.nav-tabs {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    margin-top: 50px;
+}
+.nav-tabs li {
+    display: block;
+    margin: 10px 0;
+}
+.nav-tabs a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: 400;
+}
+.nav-tabs a:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 5px;
+}
+main {
+    padding-bottom: 50px;
+}
+@media only screen and (min-width: 601px) {
+    .nav-tabs {
+        flex-direction: row;
+        margin-top: 30px;
+    }
+    .nav-tabs li {
+        margin: 0 10px;
+    }
+    .videos-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .videos {
+        text-align: left;
+    }
+    .directores-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .directores {
+        text-align: left;
+    }
+    figure {
+        width: 45%;
+        margin: 30px;
+    }
+    h1, h2 {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .video-container, .nav-tabs {
+        margin-bottom: 40px;
+    }
+    .about-us p {
+        margin-bottom: 40px;
+    }
+    footer p {
+        margin-top: 40px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    body {
+        padding: 1em;
+    }
+    .nav-tabs {
+        height: auto;
+    }
+    .contact-info {
+        flex-direction: column;
+    }
+    .contact-column {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+    .videos-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .videos {
+        text-align: center;
+    }
+    .directores-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .directores {
+        text-align: center;
+    }
+    figure {
+        width: 100%;
+    }
+}
+.video-container {
+    width: 100%;
+    max-width: 560px;
+    margin: 0 auto;
+}
+video {
+    width: 100%;
+    height: auto;
+}
